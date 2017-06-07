@@ -1,51 +1,42 @@
 /*Eliminamos los margenes y paddings que agrega el navegador por defecto*/
-* {
-  padding: 0;
+*{
   margin: 0;
+  padding: 0;
+font-family: 'Libre Baskerville', serif;  
 }
 
-header {
+.container{
+  display: flex;
+}
+
+nav{
+  width: 100%;
+  align-items: center;
+}
+
+.menu-columna{
+  flex-direction: row;
+  
+  width: 100%;
+  align-items: center;
+}
+ a {
   background: #DF6E6F;
-  
-/* abarque el 100 de mi pagina*/
-  width: 100%; 
-  
-/* menu fijo */
- position: fixed;
-  
-/* el menu se muettre ensima de los elementos*/
-  z-index: 100;
-}
 
-nav {
-  float: left; /* Desplazamos el nav hacia la izquierda */
-	
-}
- 
-nav ul {
-  list-style: none;
-  overflow: hidden; /* Limpiamos errores de float */
-}
- 
-nav ul li {
-  float: left;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-}
- 
-nav ul li a {
-  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
-  
-  padding: 20px;
-  color: #fff;
   text-decoration: none;
-}
+  color: white;
+  width: 16.3%;
+  text-align: center;
+  line-height: 80px;
+  font-size: 1.5rem;
+  border: 1px solid grey;
  
-nav ul li a:hover {
-  opacity: 0.5;
+ a:hover {
+opacity: 0.5;
    border:2px solid #fff;
    font-family: 'Vibur', cursive;
-
+}
+  
 .pointer{ 
 	cursor: pointer; 
 }
